@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+                        <!----home---->
+    <nav id="desktop-nav">
+       <div class="logo">LALITHKUMAR</div>
+       <div>
+        <ul class="nav-links">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skill">skill</a></li>
+          <li><a href="#youtube">youtube</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"  style="color: white;">LALITHKUMAR</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">skill</a></li>
+          <li><a href="#youtube" onclick="toggleMenu()">youtube</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+                       <!----profile---->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/home.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">LALITHKUMAR</h1>
+        <p class="section_text_p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button><a href="./resume.html"> Download CV</a>
+           
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin img.jfif"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+                    <!----about---->
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresher <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BCOM.CA Bachelors Degree<br />MCA Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+                 <!----experience---->
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <!----education---->
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+                 <!----skill---->
+    <section id="skill">
+    <div class="container">
+      <div class="jumborton bg-light">
+        <h1 class="display-3 text-center text-info">My skill</h1>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet in dolores, 
+          beatae quisquam ipsa porro eligendi libero quia quis odit voluptatem adipisci perferendis aspernatur eum nulla earum, 
+          doloremque quidem?</p>
+          <div class="ool-lg-6">
+            <h2 class="display-5 text-info my-1">LALITHKUMAR</h2>
+
+          <div class="mb-3">
+            <label>HTML & CSS</label>
+            <div class="progress">
+            <div class="progress-bar bg-info" style="width:100%" role="progressbar" aris-valuenow="100"
+            aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>  
+          </div>
+          <div class="mb-3">
+            <label>JavaScript</label>
+            <div class="progress">
+            <div class="progress-bar bg-info" style="width:85%" role="progressbar" aris-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>  
+          </div>
+          <div class="mb-3">
+            <label>Python</label>
+            <div class="progress">
+            <div class="progress-bar bg-info" style="width:90%" role="progressbar" aris-valuenow="90"
+            aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+            </div>
+            <div class="container2">
+              <div class="mb-3">
+                <label>C++</label>
+                <div class="progress">
+                <div class="progress-bar bg-info" style="width:70%" role="progressbar" aris-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+                </div>
+                </section>
+                   <!-----project---->
+      <section id="projects" class="full-height px-lg-5">
+        <div class="container">
+            <div class="row pb-4" data-aos="fade-up">
+                <div class="col-lg-8">
+                    <h6 class="text-brand">Projects</h6>
+                    <h1 class="glow">My Recent Projects</h1>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base">
+                        <div class="card-custom-image">
+                            <a href="https://lalithkumarsv.github.io/random-ball/"><img
+                                    src="./assets/random ball (4).png" alt="Random Balls"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-circle"></i> Random Balls</h4>
+                            <p>Balls that change colors dynamically.</p>
+                            <a href="https://github.com/Lalithkumarsv/random-ball.git" class="link-custom">code here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                        <div class="card-custom-image rounded-4">
+                            <a href="https://lalithkumarsv.github.io/bouncing-ball/"><img src="./assets/moving ball.png"
+                                    alt="Bouncing Balls"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-basketball-ball"></i> Bouncing Balls</h4>
+                            <p>Bouncing balls that jump back into position.</p>
+                            <a href="https://github.com/Lalithkumarsv/bouncing-ball.git" class="link-custom">Code here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base">
+                        <div class="card-custom-image">
+                            <a href=" https://lalithkumarsv.github.io/wordcount/"><img
+                                    src="./assets/word count.png" alt="Word Count"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-file-alt"></i> Word Count</h4>
+                            <p>Tool for counting words effectively.</p>
+                            <a href="https://github.com/Lalithkumarsv/wordcount.git" class="link-custom">Code
+                                here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base">
+                        <div class="card-custom-image">
+                            <a href="https://lalithkumarsv.github.io/pacman/"><img src="./assets/pac.png"
+                                    alt="Pacman"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-gamepad"></i> Pacman factory</h4>
+                            <p>Classic Pacman game implementation.</p>
+                            <a href="https://github.com/Lalithkumarsv/pacman.git" class="link-custom">Code
+                                here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base">
+                        <div class="card-custom-image">
+                            <a href="https://lalithkumarsv.github.io/map/">
+                              <img
+                                    src="./assets/map img.png" alt="Map Location"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-map-marker-alt"></i> Map Location</h4>
+                            <p>Locating areas on a map.</p>
+                            <a href="https://github.com/Lalithkumarsv/map.git" class="link-custom">Code
+                                here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base">
+                        <div class="card-custom-image">
+                            <a href="https://lalithkumarsv.github.io/eye-move/"><img
+                                    src="./assets/eye img.png" alt="Eye Move"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-eye"></i> Eye Move</h4>
+                            <p>Interactive moving eye effect.</p>
+                            <a href="https://github.com/Lalithkumarsv/eye-move.git" class="link-custom">Code here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base">
+                        <div class="card-custom-image">
+                            <a href="https://lalithkumarsv.github.io/boston/"><img
+                                    src="./assets/boston.png" alt="Boston"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-map-marker-alt"></i>Boston</h4>
+                            
+                            <a href="https://github.com/Lalithkumarsv/boston.git" class="link-custom">Code
+                                here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base">
+                        <div class="card-custom-image">
+                            <a href="https://lalithkumarsv.github.io/single-pacman/"><img
+                                    src="./assets/pac single.png" alt="Pacman"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-map-marker-alt"></i> Pacman</h4>
+                            <p>Single pacman move and return.</p>
+                            <a href="https://github.com/Lalithkumarsv/single-pacman.git" class="link-custom">Code
+                                here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card-custom rounded-4 bg-base">
+                        <div class="card-custom-image">
+                            <a href="https://lalithkumarsv.github.io/towers-of-hanoi/"><img
+                                    src="./assets/towers img.png" alt="Hanoi"></a>
+                        </div>
+                        <div class="card-custom-content p-4">
+                            <h4><i class="fas fa-map-marker-alt"></i> Towers Of Hanoi</h4>
+                            <p>The objective of the puzzle is to move the entire stack to another rod.</p>
+                            <a href="https://github.com/Lalithkumarsv/towers-of-hanoi.git" class="link-custom">Code
+                                here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+      </section>
+                  <!----youtube---->
+      <div class="container">
+      <section id="youtube">
+        <h1 class="title">youtube</h1>
+        <centre>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YUvlfC-Cgp4?si=kFjQlWsRNunRDbSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </centre>
+      </div>
+      </section>
+                  <!----contacts---->
+      <section id="contacts">
+        <h1 class="title">contacts</h1>
+        <form id="form">
+          <div class="field">
+            <label for="fsubject">fsubject</label>
+            <input type="text" name="fsubject" id="fsubject">
+          </div>
+          <div class="field">
+            <label for="to_name">to_name</label>
+            <input type="text" name="to_name" id="to_name">
+          </div>
+          <div class="field">
+            <label for="from_name">from_name</label>
+            <input type="text" name="from_name" id="from_name">
+          </div>
+          <div class="field">
+            <label for="message">message</label>
+            <input type="text" name="message" id="message">
+          </div>
+          <div class="field">
+            <label for="reply_to">reply_to</label>
+            <input type="text" name="reply_to" id="reply_to">
+          </div>
+        
+          <input type="submit" id="button" value="Send Email" >
+        </form>
+        
+      </section>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('AwNFYBQkgZ5QexEGW')
+      </script>
+    <footer>
+      <h3="https://youtube.com/shorts/weBQjsUUplU?si=CHNZIkciBNK8xMaG"></h3>
+      <p>Copyright &#169; 2023 LALITHKUMAR. All Rights Reserved.</p>
+    </footer><footer class="text-center bg-body-tertiary">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2020 Copyright:
+        <a class="text-body" href="lalithsv007@gmail.com">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  
+</html>
